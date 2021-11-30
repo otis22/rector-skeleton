@@ -6,9 +6,6 @@ namespace Otis22\PhpSkeleton;
 
 class Test
 {
-    /**
-     * @return int
-     */
     public function one(): int
     {
         return 1;
