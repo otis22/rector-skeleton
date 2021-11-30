@@ -9,7 +9,6 @@ jobs:
       -
         uses: actions/checkout@v2
         with:
-          # Must be used to trigger workflow after push
           token: ${{ secrets.ACCESS_TOKEN }}
       -
         uses: shivammathur/setup-php@v2
@@ -18,7 +17,9 @@ jobs:
           coverage: none
 
       -   run: composer install --no-progress --ansi
-      ## Run ecs fix
+      # Run rector fix
+      -   run: vendor/bin/rector process --ansi
+      # Fix style after rector
       -   run: vendor/bin/ecs --ansi --fix
       -
         uses: EndBug/add-and-commit@v5.1.0

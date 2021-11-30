@@ -1,11 +1,10 @@
-# php skeleton
+# rector-skeleton
 
-Skeleton for creating small php packages with static analyzing and unit testing
+Проект для подготовки доклада "PhpRector побеждает легаси код" [для ЭФКО ЦР](https://www.youtube.com/channel/UC9oEZbCfEPfzdRKYUrfcueA). 
+Можно использовать как каркас для проектов, которые хотят внедрить ректор. 
 
-![GitHub CI](https://github.com/otis22/php-skeleton/workflows/CI/badge.svg)
+![GitHub CI](https://github.com/otis22/rector-skeleton/workflows/CI/badge.svg)
 ![Autofix](https://github.com/otis22/php-skeleton/workflows/AUTOFIX/badge.svg)
-![Travis CI](https://api.travis-ci.org/otis22/php-skeleton.svg?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/otis22/php-skeleton/badge.svg?branch=master)](https://coveralls.io/github/otis22/php-skeleton?branch=master)
 
 ## Local work
 
