@@ -26,7 +26,7 @@ jobs:
         with:
           # The arguments for the `git add` command (see the paragraph below for more info)
           add: .
-          message: "[ci-bot] ecs autofix"
+          message: "[ci-bot] autofix"
           # see https://github.community/t/github-actions-bot-email-address/17204
           author_name: "GitHub Action"
           author_email: "action@github.com"
