@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Синглтон, который сломан Ректором
+ * https://github.com/otis22/rector-skeleton/commit/4ec1da836afd4452e4bd95e8a81f7bed630cd43a
+ */
 declare(strict_types=1);
 
 namespace Otis22\PhpSkeleton\Examples;
