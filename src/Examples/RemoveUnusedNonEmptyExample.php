@@ -1,6 +1,7 @@
 <?php
 /**
- * Еще в первых числах ноября 2021 ректор бы сломал этот код удалив if
+ * Еще в первых числах ноября 2021 ректор бы сломал метод rectorDoesNotDeleteIfEmpty удалив if
+ * Сейчас(02.12.2021) эта проблема уже устранена и if удаляется безопасно.
  */
 declare(strict_types=1);
 
@@ -8,18 +9,25 @@ namespace Otis22\PhpSkeleton\Examples;
 
 final class RemoveUnusedNonEmptyExample
 {
-    private function sum($arr)
+    public function rectorDoesNotDeleteIfEmpty($arr)
     {
+        $sum = 0;
         if (!empty($arr)) {
-            $sum = 0;
             foreach ($arr as $item) {
                 $sum += $item;
             }
-            return $sum;
         }
+        return $sum;
     }
-    public function wrongSum(): int
+
+    public function rectorDeletesIfEmpty(array $arr)
     {
-        return $this->sum(null);
+        $sum = 0;
+        if (!empty($arr)) {
+            foreach ($arr as $item) {
+                $sum += $item;
+            }
+        }
+        return $sum;
     }
 }
