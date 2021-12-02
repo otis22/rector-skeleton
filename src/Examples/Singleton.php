@@ -6,11 +6,7 @@ namespace Otis22\PhpSkeleton\Examples;
 
 final class Singleton
 {
-    private static $instances = [];
-
-    protected function __construct() { }
-
-    protected function __clone() { }
+    private static array $instances = [];
 
     public function __wakeup()
     {
@@ -21,7 +17,7 @@ final class Singleton
     {
         $cls = static::class;
         if (!isset(self::$instances[$cls])) {
-            self::$instances[$cls] = new static();
+            self::$instances[$cls] = new self();
         }
 
         return self::$instances[$cls];
