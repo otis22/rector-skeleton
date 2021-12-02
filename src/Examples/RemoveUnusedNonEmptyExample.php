@@ -23,10 +23,8 @@ final class RemoveUnusedNonEmptyExample
     public function rectorDeletesIfEmpty(array $arr)
     {
         $sum = 0;
-        if (!empty($arr)) {
-            foreach ($arr as $item) {
-                $sum += $item;
-            }
+        foreach ($arr as $item) {
+            $sum += $item;
         }
         return $sum;
     }
