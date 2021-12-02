@@ -35,15 +35,12 @@ style:
 style-fix:
 	$(docker) composer style
 
-static-analyze:
-	$(docker) composer static-analyze
-
 unit:
 	$(docker) -dzend_extension=xdebug.so -dxdebug.mode=coverage  vendor/bin/phpunit
 
 coverage:
 	$(docker) composer coverage
 
-all: build install style static-analyze unit coverage
+all: build install style unit coverage
 
 .PHONY: build

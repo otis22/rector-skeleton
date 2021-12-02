@@ -26,9 +26,6 @@ jobs:
       - name: Check code standart
         run: |
           composer style
-      - name: Analyze code
-        run: |
-          composer static-analyze
       - name: Run tests
         run: |
           composer unit
