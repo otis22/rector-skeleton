@@ -34,8 +34,6 @@ make all PHP_VERSION=7.4 && make all PHP_VERSION=8.0
 
 all commands
 ```shell
-# security check
-make security
 # composer install
 make install
 # composer install with --no-dev
@@ -54,22 +52,7 @@ make coverage
 
 ## Autofix Action
 
-Github Action `.github/workflows/ecs.yml` commit fixes to your repo. 
+Github Action `.github/workflows/AUTOFIX.yml` commit fixes to your repo. 
 
 Generate [Access Token](https://github.com/settings/tokens) and add token 
 to repo Settings/Secrets/Actions secrets with name `ACCESS_TOKEN`. 
-
-Or delete `ecs.yml` file.
-
-## Adopt for you 
-
-- Click on [Use template button](https://prnt.sc/w7avaw) 
-- Put your code to src/ tests/ directory
-- Delete config files for unused CI systems
-- Change project data in composer.json, README and Makefile
-
-
-## Comments 
-
-- Repo with analyze tools: https://github.com/exakat/php-static-analysis-tools
-- Repo for gitlab-ci php https://gitlab.com/gitlab-org/gitlab-foss/-/blob/master/lib/gitlab/ci/templates/PHP.gitlab-ci.yml
