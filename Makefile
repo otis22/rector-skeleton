@@ -35,12 +35,15 @@ style:
 style-fix:
 	$(docker) composer style
 
+rector:
+	$(docker) composer rector
+
 unit:
 	$(docker) -dzend_extension=xdebug.so -dxdebug.mode=coverage  vendor/bin/phpunit
 
 coverage:
 	$(docker) composer coverage
 
-all: build install style unit coverage
+all: build install style unit coverage rector
 
 .PHONY: build
